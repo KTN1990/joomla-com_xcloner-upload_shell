@@ -136,7 +136,7 @@ def Main():
 	try:
 		
 		start = timer()
-		ThreadPool = Pool(50)
+		ThreadPool = Pool(150)
 		Threads = ThreadPool.map(check, ooo)
 		print('TIME TAKE: ' + str(timer() - start) + ' S')
 	except:
